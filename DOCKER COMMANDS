@@ -8,7 +8,7 @@ docker build -t IMAGE_NAME .: Build an image from a Dockerfile.
 docker rmi IMAGE [IMAGE...]: Remove one or more images.
 
 
-2. Container Management:
+2. Container Management :
 
 docker ps: List running containers.
 docker ps -a: List all containers (running and stopped).
