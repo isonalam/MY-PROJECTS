@@ -1,0 +1,60 @@
+## Here are some important and commonly used Docker commands that are essential for working with Docker containers and images:
+
+1. Image Management:
+
+docker images: List all Docker images on your system.
+docker pull IMAGE[:TAG]: Download an image from a registry.
+docker build -t IMAGE_NAME .: Build an image from a Dockerfile.
+docker rmi IMAGE [IMAGE...]: Remove one or more images.
+
+
+2. Container Management:
+
+docker ps: List running containers.
+docker ps -a: List all containers (running and stopped).
+docker run IMAGE [COMMAND]: Run a new container based on an image.
+docker start CONTAINER: Start a stopped container.
+docker stop CONTAINER: Stop a running container.
+docker restart CONTAINER: Restart a container.
+docker rm CONTAINER [CONTAINER...]: Remove one or more containers.
+docker exec -it CONTAINER COMMAND: Run a command inside a running container interactively
+
+
+3. Container Interaction:
+
+docker logs CONTAINER: Display logs of a container.
+docker attach CONTAINER: Attach to a running container's terminal.
+docker cp SRC_PATH CONTAINER:DEST_PATH: Copy files/directories between a container and the host.
+
+
+4. Networking:
+
+docker network ls: List Docker networks.
+docker network create NETWORK_NAME: Create a new Docker network.
+docker network connect NETWORK CONTAINER: Connect a container to a network.
+docker network disconnect NETWORK CONTAINER: Disconnect a container from a network.
+
+
+5. Volumes:
+
+docker volume ls: List Docker volumes.
+docker volume create VOLUME: Create a new Docker volume.
+docker volume inspect VOLUME: Display detailed information about a volume.
+
+
+6. Registry & Repository:
+
+docker login: Log in to a Docker registry.
+docker push IMAGE[:TAG]: Push an image to a registry.
+docker pull IMAGE[:TAG]: Pull an image from a registry.
+
+
+7. Miscellaneous:
+
+docker info: Display system-wide information about Docker.
+docker version: Display Docker version information.
+docker system df: Display Docker disk usage.
+docker system prune: Remove unused containers, networks, images, and volumes.
+
+
+These are just some of the fundamental Docker commands that are commonly used for various tasks.
