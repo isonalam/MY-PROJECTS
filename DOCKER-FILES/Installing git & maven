@@ -1,1 +1,5 @@
-
+FROM Ubuntu 
+MAINTAINER sonalpriya1597@gmail.com
+RUN apt-get update \
+ && apt-get install git -y \
+ && apt-get install maven -y
