@@ -1,0 +1,8 @@
+FROM node:14
+MAINTAINER sonalpriya1597@gmail.com
+WORKDIR app
+COPY . . 
+RUN npm install \
+ && npm run test
+EXPOSE 8000
+CMD ["node","app.js"]
