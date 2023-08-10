@@ -1,0 +1,7 @@
+FROM python:3.9
+MAINTAINER sonalpriya1597@gmail.com
+WORKDIR app
+COPY . . 
+RUN pip install Flask
+EXPOSE 5000
+CMD ["python","flask"]
